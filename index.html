@@ -16,18 +16,33 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
     <title>Hello, world!</title>
     <style type="text/css">
-    .btn-primary {
+    .btn {
         background-color: white;
         color: black;
     }
 
     body {
-        background-color: black
+        background-color: white
     }
 
+    .jumbotron {
+        padding-top: 10px;
+        padding-bottom: :0px;
+        background-color: teal;
+
+    }
+
+    /*    .jumbotron:hover {
+        background-image: url('collage.jpg');
+        background-size: cover;
+        background-size: 500px;
+        backgrond
+
+    }*/
+
     .fa {
-        padding: 4px;
-        font-size: 15px;
+        padding: 5px;
+        font-size: 18px;
         max-width: 300px;
         text-align: center;
         text-decoration: none;
@@ -45,6 +60,7 @@
 
     a {
         margin-top: 20px;
+        padding-bottom: :2px;
     }
 
     .row {
@@ -55,65 +71,78 @@
 
     /* Create four equal columns that sits next to each other */
     .column {
-        flex: 25%;
+        flex: 20%;
+        margin: 2%;
         max-width: 25%;
         padding: 0 4px;
     }
 
     .column img {
-        margin-top: 8px;
+        margin-bottom: 10%;
         vertical-align: middle;
         width: 100%;
     }
 
-    /* Responsive layout - makes a two column-layout instead of four columns */
-    @media screen and (max-width: 800px) {
-        .column {
-            flex: 50%;
-            max-width: 50%;
-        }
+    .name {
+        color: white;
+    }
+
+    img {
+        max-width: 100%
+    }
+
+    img:not(:hover) {
+        filter: grayscale(100%);
+    }
+
+    .magictoggle {
+        text-align: center;
+        color: rgba(256, 256, 256, 0.5);
+        margin: 0;
+        padding: 0;
+    }
+
+    h2 {
+        max-width: 100%;
     }
 
     /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
     @media screen and (max-width: 600px) {
         .column {
-            flex: 100%;
-            max-width: 100%;
+            flex: 40%;
+            max-width: 40%;
         }
-    }
-
-    .magictoggle {
-        text-align: center;
-        font-family: ;
     }
     </style>
 </head>
 
 <body>
-    <div class='jumbotron'>
-        <h1>Hello, world!</h1>
-        <h2>My name is Aju Ani Justus and I like taking photos<em>[among other things]</em></h2>
-        <a href='https://www.instagram.com/ajuanijustus/?hl=en' class='btn btn-primary '><i class='fa fa-instagram'></i>Check Out My Instagram</a>
-    </div>
-    <div class='magictoggle'>
-        <p>Click here to switch to black & white <i class="fa fa-lightbulb-o" aria-hidden="true"></i>[I haven't implemented this yet]</p>
-    </div>
-    <div class="row">
-        <div class="column">
-            <img src="img_1.jpeg">
-            <img src="img_2.jpeg">
+    <div class='container'>
+        <div class='jumbotron'>
+            <h2 style='color:white'>Hello, world!</h2>
+            <h2><span class='name'>My name is Aju Ani Justus and I like taking photos<em>[among other things]</em></span> </h2>
+            <a href='https://www.instagram.com/ajuanijustus/?hl=en' class='btn btn-default'><i class='fa fa-instagram'></i>Check Out My Instagram</a>
         </div>
-        <div class="column">
-            <img src="img_3.jpeg">
-            <img src="img_4.jpeg">
+        <div class='magictoggle'>
+            <p style='color:black'>Hover over images to view them in color</p>
         </div>
-        <div class="column">
-            <img src="img_5.jpeg">
-            <img src="img_6.jpeg">
-        </div>
-        <div class="column">
-            <img src="img_7.jpeg">
-            <img src="img_8.jpeg">
+        <div class="row">
+            <div class="column">
+                <img src="img_1.jpeg">
+                <img src="img_2.jpeg">
+            </div>
+            <div class="column">
+                <img src="img_3.jpeg">
+                <img src="img_4.jpeg">
+            </div>
+            <div class="column">
+                <img src="img_5.jpeg">
+                <img src="img_6.jpeg">
+            </div>
+            <div class="column">
+                <img src="img_7.jpeg">
+                <img src="img_8.jpeg">
+            </div>
         </div>
     </div>
 </body>
