@@ -7,13 +7,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-    <!-- Add icon library -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <!-- Add icon library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Hello, world!</title>
     <style type="text/css">
     .btn {
@@ -26,27 +24,17 @@
     }
 
     .jumbotron {
-        padding-top: 10px;
-        padding-bottom: :0px;
-        background-color: teal;
+        vertical-align: center;
+        padding: 10px 0px 2px 20px;
+        background-color: black;
+        margin-bottom: 2px;
+        opacity: 90%;
 
     }
 
-    /*    .jumbotron:hover {
-        background-image: url('collage.jpg');
-        background-size: cover;
-        background-size: 500px;
-        backgrond
-
-    }*/
-
-    .fa {
-        padding: 5px;
+    .fa-instagram {
+        padding: 10px;
         font-size: 18px;
-        max-width: 300px;
-        text-align: center;
-        text-decoration: none;
-
     }
 
     .fa:hover {
@@ -59,90 +47,78 @@
     }
 
     a {
-        margin-top: 20px;
+        margin-top: 22px;
+        margin-left: 22px;
         padding-bottom: :2px;
-    }
-
-    .row {
-        display: flex;
-        flex-wrap: wrap;
-        padding: 0 4px;
-    }
-
-    /* Create four equal columns that sits next to each other */
-    .column {
-        flex: 20%;
-        margin: 2%;
-        max-width: 25%;
-        padding: 0 4px;
-    }
-
-    .column img {
-        margin-bottom: 10%;
-        vertical-align: middle;
-        width: 100%;
     }
 
     .name {
         color: white;
     }
 
-    img {
-        max-width: 100%
+    img:hover {
+        height: 100%;
     }
 
     img:not(:hover) {
         filter: grayscale(100%);
+        height: 100%;
     }
 
     .magictoggle {
         text-align: center;
-        color: rgba(256, 256, 256, 0.5);
-        margin: 0;
+        color: rgba(0, 0, 0, 0.4);
+        margin-top: 15px;
+        margin-bottom: 0px;
         padding: 0;
     }
 
     h2 {
         max-width: 100%;
+        letter-spacing: 0.3em;
     }
 
-    /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-    @media screen and (max-width: 600px) {
-        .column {
-            flex: 40%;
-            max-width: 40%;
-        }
+    .top-buffer {
+        margin-top: 20px;
     }
     </style>
 </head>
 
 <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Home</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link fa fa-instagram" href="https://www.instagram.com/ajuanijustus/?hl=en"><span style="padding-left:5px">Instagram</span></a>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
     <div class='container'>
+        <nav class='navbar navbar-default'></nav>
         <div class='jumbotron'>
-            <h2 style='color:white'>Hello, world!</h2>
-            <h2><span class='name'>My name is Aju Ani Justus and I like taking photos<em>[among other things]</em></span> </h2>
-            <a href='https://www.instagram.com/ajuanijustus/?hl=en' class='btn btn-default'><i class='fa fa-instagram'></i>Check Out My Instagram</a>
+            <h2 style='color:white; padding-bottom:0'>Aju Ani Justus</h2>
         </div>
         <div class='magictoggle'>
-            <p style='color:black'>Hover over images to view them in color</p>
+            <p>Hover/Tap images to view them in color</p>
         </div>
-        <div class="row">
-            <div class="column">
-                <img src="img_1.jpeg">
-                <img src="img_2.jpeg">
-            </div>
-            <div class="column">
-                <img src="img_3.jpeg">
-                <img src="img_4.jpeg">
-            </div>
-            <div class="column">
-                <img src="img_5.jpeg">
-                <img src="img_6.jpeg">
-            </div>
-            <div class="column">
-                <img src="img_7.jpeg">
-                <img src="img_8.jpeg">
-            </div>
+        <div class="row ">
+            <img class="col-lg-3 col-md-6 col-xs-12 top-buffer" src="img_1.jpeg">
+            <img class="col-lg-3 col-md-6 col-xs-12 top-buffer" src="img_2.jpeg">
+            <img class="col-lg-3 col-md-6 col-xs-12 top-buffer" src="img_3.jpeg">
+            <img class="col-lg-3 col-md-6 col-xs-12 top-buffer" src="img_4.jpeg">
+            <img class="col-lg-3 col-md-6 col-xs-12 top-buffer" src="img_5.jpeg">
+            <img class="col-lg-3 col-md-6 col-xs-12 top-buffer" src="img_6.jpeg">
+            <img class="col-lg-3 col-md-6 col-xs-12 top-buffer" src="img_7.jpeg">
+            <img class="col-lg-3 col-md-6 col-xs-12 top-buffer" src="img_8.jpeg">
         </div>
     </div>
 </body>
