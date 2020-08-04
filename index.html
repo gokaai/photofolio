@@ -6,95 +6,141 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
     <!-- Add icon library -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Hello, world!</title>
     <style type="text/css">
-    .btn {
-        background-color: white;
-        color: black;
-    }
+        .btn {
+            background-color: white;
+            color: black;
+        }
 
-    body {
-        margin-top: 70px;
-        background-color: white
-    }
+        body {
+            margin-top: 70px;
+            background-color: white;
+            transition-duration: 2s;
+        }
 
-    .jumbotron {
-        vertical-align: center;
-        padding: 10px 0px 2px 20px;
-        background-color: black;
-        margin-bottom: 2px;
-        opacity: 90%;
+        .black-bg {
+            background-color: black;
+        }
 
-    }
+        .jumbotron {
+            vertical-align: center;
+            padding: 10px 0px 2px 20px;
+            background-color: black;
+            margin-bottom: 2px;
+            opacity: 90%;
 
-    .fa-instagram {
-        padding: 10px;
-        font-size: 18px;
-    }
+        }
 
-    .fa:hover {
-        opacity: 0.7;
-    }
+        .fa-instagram {
+            padding: 10px;
+            font-size: 18px;
+        }
 
-    em {
-        font-size: 10px;
-        margin-left: 10px
-    }
+        .fa:hover {
+            opacity: 0.7;
+        }
 
-    a {
-        margin-top: 22px;
-        margin-left: 22px;
-        padding-bottom: :2px;
-    }
+        em {
+            font-size: 10px;
+            margin-left: 10px
+        }
 
-    .name {
-        color: white;
-    }
+        a {
+            text-align: center;
+            color: rgba(0, 0, 0, 0.4);
+            margin-top: 15px;
+            margin-bottom: 0px;
+            padding: 0;
+            transition-duration: 2s;
+        }
 
-    img:hover {
-        height: 100%;
-    }
+        a:hover {
+            text-align: center;
+            color: rgba(0, 0, 0, 0.4);
+            margin-top: 15px;
+            margin-bottom: 0px;
+            padding: 0;
+            text-decoration: none;
+        }
 
-    img:not(:hover) {
-        filter: grayscale(100%);
-        height: 100%;
-    }
+        .name {
+            color: white;
+        }
 
-    .magictoggle {
-        text-align: center;
-        color: rgba(0, 0, 0, 0.4);
-        margin-top: 15px;
-        margin-bottom: 0px;
-        padding: 0;
-    }
+        img {
+            height: 100%;
+            transition-duration: 2s;
+        }
 
-    h2 {
-        max-width: 100%;
-        letter-spacing: 0.3em;
-    }
+        .greyscale {
+            filter: grayscale(100%);
+            color: rgba(255, 255, 255, 0.6)
+        }
 
-    .top-buffer {
-        margin-top: 20px;
-    }
+        .magictoggle {
+            text-align: center;
+            color: rgba(0, 0, 0, 0.4);
+            margin-top: 15px;
+            margin-bottom: 0px;
+            padding: 0;
+        }
+
+        h2 {
+            max-width: 100%;
+            letter-spacing: 0.3em;
+        }
+
+        .top-buffer {
+            margin-top: 20px;
+        }
+
     </style>
+
+    <script type="text/javascript">
+        function toggle_background() {
+            const body = document.getElementsByTagName('body')[0]
+            body.classList.toggle('black-bg')
+            const images = document.getElementsByTagName('img')
+            Array.from(images).forEach(function (image) { image.classList.toggle('greyscale') })
+            const toggleText = document.getElementsByTagName('p')[0];
+            toggleText.classList.toggle('greyscale');
+            if (toggleText.textContent.indexOf('off') != -1) {
+                toggleText.textContent = ' Turn on the lights';
+
+            }
+            else {
+                toggleText.textContent = ' Turn off the lights';
+            };
+        }
+    </script>
 </head>
 
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
         <a class="navbar-brand" href="#">Home</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item">
-                    <a class="nav-link fa fa-instagram" href="https://www.instagram.com/ajuanijustus/?hl=en"><span style="padding-left:5px">Instagram</span></a>
+                    <a class="nav-link fa fa-instagram" href="https://www.instagram.com/ajuanijustus/?hl=en"><span
+                            style="padding-left:5px">Instagram</span></a>
                 </li>
             </ul>
         </div>
@@ -105,7 +151,9 @@
             <h2 style='color:white; padding-bottom:0'>Aju Ani Justus</h2>
         </div>
         <div class='magictoggle'>
-            <p>Hover/Tap images to view them in color</p>
+            <a href="#" onclick="toggle_background();">
+                <p class="fa fa-lightbulb-o"> Turn off the lights</p>
+            </a>
         </div>
         <div class="row ">
             <img class="col-lg-3 col-md-6 col-xs-12 top-buffer" src="img_1.jpeg">
